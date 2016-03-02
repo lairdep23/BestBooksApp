@@ -27,6 +27,8 @@ class BooksTableCell: UITableViewCell {
         bookImage.image = book.getBookImage()
         bookLink.text = book.link
         
+        bookImage.layer.cornerRadius = 5.0
+        bookImage.clipsToBounds = true 
         
     }
 }

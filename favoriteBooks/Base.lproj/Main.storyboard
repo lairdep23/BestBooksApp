@@ -52,9 +52,9 @@
                                     <constraint firstAttribute="bottom" secondItem="ck0-5n-hUn" secondAttribute="bottom" constant="11" id="i7O-nr-anM"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cOz-An-lCQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cOz-An-lCQ">
                                 <rect key="frame" x="20" y="110" width="560" height="470"/>
-                                <color key="backgroundColor" red="0.0" green="0.7766050122" blue="0.96792868590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookTableCell" rowHeight="100" id="tru-yt-wCa" customClass="BooksTableCell" customModule="favoriteBooks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="560" height="100"/>
@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="-945" y="-1318"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailsVC-->
         <scene sceneID="gaT-Yd-96L">
             <objects>
-                <viewController id="uub-gM-pW7" sceneMemberID="viewController">
+                <viewController id="uub-gM-pW7" customClass="DetailsVC" customModule="favoriteBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ked-lD-YZD"/>
                         <viewControllerLayoutGuide type="bottom" id="fVh-1y-oEc"/>
@@ -369,35 +369,41 @@
                                     <constraint firstAttribute="width" constant="180" id="lPx-Oh-6fb"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pe0-Vs-anK">
-                                <rect key="frame" x="20" y="455" width="560" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zsW-bB-a2q">
+                                <rect key="frame" x="20" y="465" width="560" height="55"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="4a2-uH-zhL"/>
+                                    <constraint firstAttribute="height" constant="55" id="5Q9-AG-whZ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="GHw-FW-FwB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                <state key="normal" title="www.amazon.com/bookTitle">
-                                    <color key="titleColor" red="0.0" green="0.7766050122" blue="0.96792868590000003" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.7766050122" blue="0.96792868590000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zsW-bB-a2q" firstAttribute="leading" secondItem="wkL-v2-rY3" secondAttribute="leadingMargin" id="0rv-BK-P73"/>
                             <constraint firstItem="oeT-z6-X27" firstAttribute="leading" secondItem="wkL-v2-rY3" secondAttribute="leadingMargin" id="27C-6H-x2Z"/>
+                            <constraint firstItem="zsW-bB-a2q" firstAttribute="trailing" secondItem="wkL-v2-rY3" secondAttribute="trailingMargin" id="2cE-pC-0cF"/>
                             <constraint firstItem="b1I-Hc-1CJ" firstAttribute="leading" secondItem="wkL-v2-rY3" secondAttribute="leadingMargin" id="8Ht-hR-e0J"/>
                             <constraint firstItem="Bbs-eM-kbU" firstAttribute="centerX" secondItem="wkL-v2-rY3" secondAttribute="centerX" id="CXB-he-E6Y"/>
                             <constraint firstItem="T7k-tB-pkd" firstAttribute="top" secondItem="wkL-v2-rY3" secondAttribute="top" id="J1z-wE-GZJ"/>
-                            <constraint firstItem="pe0-Vs-anK" firstAttribute="leading" secondItem="wkL-v2-rY3" secondAttribute="leadingMargin" id="Lf0-Bi-2Gf"/>
                             <constraint firstAttribute="trailing" secondItem="T7k-tB-pkd" secondAttribute="trailing" id="Tou-bY-iHA"/>
                             <constraint firstItem="b1I-Hc-1CJ" firstAttribute="top" secondItem="Bbs-eM-kbU" secondAttribute="bottom" constant="20" id="bsQ-N5-j1x"/>
                             <constraint firstItem="b1I-Hc-1CJ" firstAttribute="trailing" secondItem="wkL-v2-rY3" secondAttribute="trailingMargin" id="d42-y8-bJE"/>
                             <constraint firstItem="oeT-z6-X27" firstAttribute="trailing" secondItem="wkL-v2-rY3" secondAttribute="trailingMargin" id="dN2-YZ-juJ"/>
-                            <constraint firstItem="pe0-Vs-anK" firstAttribute="trailing" secondItem="wkL-v2-rY3" secondAttribute="trailingMargin" id="eL1-1l-t3c"/>
-                            <constraint firstItem="pe0-Vs-anK" firstAttribute="top" secondItem="b1I-Hc-1CJ" secondAttribute="bottom" constant="10" id="h7F-WS-nXn"/>
+                            <constraint firstItem="zsW-bB-a2q" firstAttribute="top" secondItem="b1I-Hc-1CJ" secondAttribute="bottom" constant="20" id="mrY-J9-IeZ"/>
                             <constraint firstItem="oeT-z6-X27" firstAttribute="top" secondItem="T7k-tB-pkd" secondAttribute="bottom" constant="10" id="nGz-CQ-h09"/>
                             <constraint firstItem="T7k-tB-pkd" firstAttribute="leading" secondItem="wkL-v2-rY3" secondAttribute="leading" id="oCN-nZ-Bth"/>
                             <constraint firstItem="Bbs-eM-kbU" firstAttribute="top" secondItem="oeT-z6-X27" secondAttribute="bottom" constant="10" id="vTi-Zh-DMp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bookDetDesc" destination="b1I-Hc-1CJ" id="S2b-Xl-cRD"/>
+                        <outlet property="bookDetImage" destination="Bbs-eM-kbU" id="Web-2M-J2e"/>
+                        <outlet property="bookDetLink" destination="zsW-bB-a2q" id="ISE-Eg-cI2"/>
+                        <outlet property="bookDetTitle" destination="oeT-z6-X27" id="qoP-mU-4wh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fh8-Le-TYB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -408,6 +414,6 @@
         <image name="BestBooks" width="432" height="122"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SrN-wj-NKL"/>
+        <segue reference="Iyw-Wb-a6R"/>
     </inferredMetricsTieBreakers>
 </document>

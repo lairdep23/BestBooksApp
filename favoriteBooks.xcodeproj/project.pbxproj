@@ -17,6 +17,7 @@
 		20D8F1B21C80DDF60087F761 /* Books+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8F1B01C80DDF60087F761 /* Books+CoreDataProperties.swift */; };
 		20D8F1B31C80DDF60087F761 /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8F1B11C80DDF60087F761 /* Books.swift */; };
 		20D8F1B51C84D7620087F761 /* BooksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8F1B41C84D7620087F761 /* BooksTableCell.swift */; };
+		20D8F1B91C8605490087F761 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D8F1B81C8605490087F761 /* DetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		20D8F1B01C80DDF60087F761 /* Books+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Books+CoreDataProperties.swift"; path = "../Books+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		20D8F1B11C80DDF60087F761 /* Books.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Books.swift; path = ../Books.swift; sourceTree = "<group>"; };
 		20D8F1B41C84D7620087F761 /* BooksTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksTableCell.swift; sourceTree = "<group>"; };
+		20D8F1B81C8605490087F761 /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				20D8F1981C7FD8950087F761 /* ViewController.swift */,
 				20D8F1AE1C80D96F0087F761 /* AddNewVC.swift */,
+				20D8F1B81C8605490087F761 /* DetailsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20D8F1B31C80DDF60087F761 /* Books.swift in Sources */,
+				20D8F1B91C8605490087F761 /* DetailsVC.swift in Sources */,
 				20D8F1B51C84D7620087F761 /* BooksTableCell.swift in Sources */,
 				20D8F1991C7FD8950087F761 /* ViewController.swift in Sources */,
 				20D8F1B21C80DDF60087F761 /* Books+CoreDataProperties.swift in Sources */,

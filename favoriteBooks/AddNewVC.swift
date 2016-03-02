@@ -72,7 +72,7 @@ class AddNewVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDe
                 print("Could not save book!")
             }
             
-            self.navigationController?.popViewControllerAnimated(true)
+            self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
     

@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        if let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as? BooksTableCell {
+        if let cell = tableView.dequeueReusableCellWithIdentifier("BookTableCell") as? BooksTableCell {
             
             let book = books[indexPath.row]
             cell.configureCell(book)
